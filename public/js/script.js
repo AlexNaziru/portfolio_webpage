@@ -12,6 +12,10 @@ window.onscroll = () => {
   // Sticky navbar
   let header = document.querySelector(".header");
   header.classList.toggle("sticky", window.scrollY > 100);
+
+  // Removing navbar when clicking on a link
+  menuIcon.classList.remove("bx-x");
+  navbar.classList.remove("active")
 }
 
 // Swiper init
